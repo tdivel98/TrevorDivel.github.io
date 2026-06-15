@@ -1,149 +1,407 @@
 <!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trevor Divel | Data Analyst</title>
+    <meta name="description" content="Trevor Divel — Data Analyst based in Austin, Texas. SQL, Python, Power BI, Tableau." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css?v=2" />
+</head>
+<body>
 
-<html>
-	<head>
-		<title>Trevor Divel Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <!-- Background particle network -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Nav -->
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">TD</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/trevor-divel-8b1a941b5/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/tdivel98" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Trevor Divel<br />
-						Portfolio</h1>
-						<p>Data Analyst looking to break into Data Engineering. <br />
-							Skilled with using tools such as SQL, Python, Tableau, PowerBi, SAS and HTML <br /> to collect, clean, 
-							analyze, and visualize data sets of all sizes! 
-							<br /> GitHub: <a href=https://github.com/tdivel98>@tdivel98</a>
-							 <ul class="actions">
-								<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Hi, I'm</p>
+            <h1 class="hero-name">Trevor Divel</h1>
+            <h2 class="hero-title">Data Analyst</h2>
+            <p class="hero-desc">I bridge the gap between technical data solutions and business outcomes — skilled across the full analytics stack from SQL and Python to Power BI, Tableau, and custom web apps.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/trevor-divel-8b1a941b5/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/tdivel98" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-text">
+                <p>I'm a Data Analyst at Maxwell Locke & Ritter, an accounting and advisory firm in Austin, Texas. I studied Technology Management at Texas A&M University and have built a career at the intersection of data analytics and full-stack software development.</p>
+                <p>In my current role I build and maintain the firm's internal reporting platform — a full-stack ASP.NET Core web application that consolidates reporting across Tax, Audit, and Transaction Advisory. I co-own executive-level Power BI dashboards alongside the CTO and regularly ship features like automated report delivery, custom workflow trackers, and data export tools. Before MLR, I was a Data Analyst at Travis County where I launched 10 Power BI dashboards that replaced 30 legacy SSRS reports and helped stand up the county's first comprehensive data warehouse.</p>
+                <p>I hold IBM Data Science and Python certifications and am always looking for new ways to turn raw data into decisions.</p>
+                <div class="about-links">
+                    <a href="https://github.com/tdivel98" class="btn btn-ghost-sm" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/trevor-divel-8b1a941b5/" class="btn btn-ghost-sm" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data &amp; Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SAS</span>
+                        <span class="skill-tag">Excel</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web &amp; Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Azure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2>Data Cleaning<br />
-										in SQL<br />
-									</a></h2>
-									<p>For this project I used Microsoft SQL Server to organize<br /> and clean a data set 
-										I found online pertaining to the Nashville area. </p>
-								</header>
-								<a class="image main"><img src="images/data_cleaning.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/tdivel98/Data-Cleaning-in-SQL/blob/main/SQLQuery2.sql" class="button large">View Project</a></li>
-								</ul>
-							</article>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2>Covid 19 <br />
-											Data Exploration<br />
-										
-									</header>
-									<a class="image fit"><img src="images/covid_image.jpg" alt="" /></a>
-									<p> In this project I used Microsoft SQL Server and Excel to collect and analyze 
-										a global COVID 19 dataset.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/tdivel98/Covid_SQL/blob/main/SQLQuery1.sql" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-									
-										<h2>Covid 19 data <br />
-											visualization<br />
-										
-									</header>
-									<a class="image fit"><img src="images/download.jpg" alt="" /></a>
-									<p>In this project I used Tableau to visualize and gain insight on the previous covid 19 data I collected by creating a dashboard.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/trevor.divel/viz/CovidDashboard_16578208879920/Dashboard1" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2> GameStop Web scraper<br />
-											 with python<br />
-									
-									</header>
-									<a class="image fit"><img src="images/gme.jpg" alt="" /></a>
-									<p>In this project I used scraped data from a research platform for investors<br /> to 
-										create a interactive dashboard to analyze historical 
-										stock/revenue data for <br />my favorite stock, GameStop.
+                <!-- Featured -->
+                <article class="project-card featured">
+                    <div class="project-img">
+                        <img src="images/data_cleaning.jpg" alt="Data Cleaning in SQL" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Microsoft SQL Server</span>
+                        </div>
+                        <h3>Data Cleaning in SQL</h3>
+                        <p>Used Microsoft SQL Server to organize and clean a Nashville housing dataset — applying normalization, deduplication, null handling, and column standardization to make it analysis-ready.</p>
+                        <a href="https://github.com/tdivel98/Data-Cleaning-in-SQL/blob/main/SQLQuery2.sql" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+                    </div>
+                </article>
 
-									<ul class="actions special">
-										<li><a href="https://github.com/tdivel98/GME-Dashboard/blob/Main/Script" class="button">View Project</a></li>
-									</ul>
-								</article>
-							
-								
-				    <footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p> Austin, Texas</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#"></a>(210) 420-1705</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#"></a>tdivel98@yahoo.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-							
-									<li><a href="https://www.linkedin.com/in/trevor-divel-8b1a941b5/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/tdivel98" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+                <!-- Covid SQL -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="images/covid_image.jpg" alt="Covid-19 Data Exploration" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Excel</span>
+                        </div>
+                        <h3>Covid-19 Data Exploration</h3>
+                        <p>Collected and analyzed a global COVID-19 dataset using Microsoft SQL Server and Excel, exploring infection rates, death counts, and vaccination rollout trends across countries.</p>
+                        <a href="https://github.com/tdivel98/Covid_SQL/blob/main/SQLQuery1.sql" class="btn btn-outline" target="_blank" rel="noopener">View Project</a>
+                    </div>
+                </article>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+                <!-- Covid Tableau -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="images/download.jpg" alt="Covid-19 Data Visualization" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Tableau</span>
+                        </div>
+                        <h3>Covid-19 Data Visualization</h3>
+                        <p>Built an interactive Tableau dashboard to visualize the COVID-19 dataset, presenting global trends in a format that makes the data easy to explore and understand.</p>
+                        <a href="https://public.tableau.com/app/profile/trevor.divel/viz/CovidDashboard_16578208879920/Dashboard1" class="btn btn-outline" target="_blank" rel="noopener">View Project</a>
+                    </div>
+                </article>
 
-			</div>
+                <!-- GME -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="images/gme.jpg" alt="GameStop Stock Dashboard" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Web Scraping</span>
+                        </div>
+                        <h3>GameStop Stock Dashboard</h3>
+                        <p>Scraped historical stock and revenue data from a financial research platform using Python, then built an interactive dashboard to analyze GameStop's financial history and stock performance.</p>
+                        <a href="https://github.com/tdivel98/GME-Dashboard/blob/Main/Script" class="btn btn-outline" target="_blank" rel="noopener">View Project</a>
+                    </div>
+                </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            </div>
+        </div>
+    </section>
 
-	</body>
+    <!-- Contact / Footer -->
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-sub">Open to new opportunities and interesting data challenges.</p>
+            <div class="contact-links">
+                <a href="tel:2104201705" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    (210) 420-1705
+                </a>
+                <a href="mailto:tdivel98@yahoo.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    tdivel98@yahoo.com
+                </a>
+                <a href="https://www.linkedin.com/in/trevor-divel-8b1a941b5/" class="contact-item" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/tdivel98" class="contact-item" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                &copy; 2026 Trevor Divel &middot; Austin, Texas
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data dashboard background
+        (function () {
+            const canvas = document.getElementById('bg-canvas');
+            const ctx    = canvas.getContext('2d');
+
+            let W, H, tick = 0, labels = [];
+
+            function resize() {
+                W = canvas.width  = window.innerWidth;
+                H = canvas.height = window.innerHeight;
+                initLabels();
+            }
+
+            // ── Grid ──────────────────────────────────────────
+            function drawGrid() {
+                ctx.lineWidth = 0.5;
+                ctx.strokeStyle = 'rgba(96, 165, 250, 0.07)';
+                for (let y = 0; y < H; y += 55) {
+                    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+                }
+                for (let x = 0; x < W; x += 75) {
+                    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+                }
+            }
+
+            // ── Smooth chart line ──────────────────────────────
+            function chartY(i, n, baseY, amp, freq, phase) {
+                return baseY
+                    + amp * Math.sin(i * freq + phase)
+                    + amp * 0.45 * Math.sin(i * freq * 1.9 + phase * 1.3)
+                    + amp * 0.2  * Math.sin(i * freq * 3.1 + phase * 0.7);
+            }
+
+            function drawChart(n, baseY, amp, freq, phase, rgb, lineAlpha, fillAlpha, lw) {
+                const pts = [];
+                for (let i = 0; i <= n; i++) {
+                    pts.push({ x: (i / n) * W, y: chartY(i, n, baseY, amp, freq, phase) });
+                }
+
+                // Gradient fill under line
+                const grad = ctx.createLinearGradient(0, baseY - amp, 0, baseY + amp * 1.5);
+                grad.addColorStop(0, `rgba(${rgb}, ${fillAlpha})`);
+                grad.addColorStop(1, `rgba(${rgb}, 0)`);
+                ctx.beginPath();
+                ctx.moveTo(pts[0].x, H);
+                pts.forEach(p => ctx.lineTo(p.x, p.y));
+                ctx.lineTo(pts[pts.length - 1].x, H);
+                ctx.closePath();
+                ctx.fillStyle = grad;
+                ctx.fill();
+
+                // Smooth line (quadratic curves)
+                ctx.beginPath();
+                ctx.moveTo(pts[0].x, pts[0].y);
+                for (let i = 1; i < pts.length; i++) {
+                    const mx = (pts[i - 1].x + pts[i].x) / 2;
+                    const my = (pts[i - 1].y + pts[i].y) / 2;
+                    ctx.quadraticCurveTo(pts[i - 1].x, pts[i - 1].y, mx, my);
+                }
+                ctx.strokeStyle = `rgba(${rgb}, ${lineAlpha})`;
+                ctx.lineWidth   = lw;
+                ctx.shadowBlur  = 10;
+                ctx.shadowColor = `rgba(${rgb}, 0.9)`;
+                ctx.stroke();
+                ctx.shadowBlur  = 0;
+
+                // Data point nodes every few steps
+                pts.forEach((p, i) => {
+                    if (i % 4 !== 0) return;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, lw + 1, 0, Math.PI * 2);
+                    ctx.fillStyle   = `rgba(${rgb}, 0.9)`;
+                    ctx.shadowBlur  = 12;
+                    ctx.shadowColor = `rgba(${rgb}, 1)`;
+                    ctx.fill();
+                    ctx.shadowBlur  = 0;
+                });
+
+                return pts;
+            }
+
+            // ── Bar chart (bottom) ─────────────────────────────
+            function drawBars() {
+                const count = 36, gap = 2;
+                const bw = (W / count) - gap;
+                for (let i = 0; i < count; i++) {
+                    const bh = (0.25 + 0.75 * Math.abs(Math.sin(i * 2.1 + tick * 0.04))) * H * 0.12;
+                    const x  = i * (bw + gap);
+                    ctx.fillStyle   = 'rgba(96, 165, 250, 0.1)';
+                    ctx.fillRect(x, H - bh, bw, bh);
+                    ctx.strokeStyle = 'rgba(147, 197, 253, 0.18)';
+                    ctx.lineWidth   = 0.5;
+                    ctx.strokeRect(x, H - bh, bw, bh);
+                }
+            }
+
+            // ── Floating data labels ───────────────────────────
+            const LABEL_POOL = [
+                '1500','1550','1600','1700','1450','3000','4500','6000',
+                '7500','8000','9%','0.45','1.2','RTG','HRT','FRT',
+                '02.07','02.08','02.09','02.10','02.11','02.12',
+                'OTC','DIV','VOL','P/E','EPS'
+            ];
+
+            function initLabels() {
+                labels = Array.from({ length: 22 }, () => ({
+                    x:     Math.random() * W,
+                    y:     Math.random() * H,
+                    text:  LABEL_POOL[Math.floor(Math.random() * LABEL_POOL.length)],
+                    vx:    (Math.random() - 0.5) * 0.12,
+                    vy:    (Math.random() - 0.5) * 0.08,
+                    alpha: 0.07 + Math.random() * 0.1
+                }));
+            }
+
+            function drawLabels() {
+                ctx.font = '11px "JetBrains Mono", monospace';
+                labels.forEach(l => {
+                    l.x += l.vx; l.y += l.vy;
+                    if (l.x < -40)  l.x = W + 40;
+                    if (l.x > W+40) l.x = -40;
+                    if (l.y < -20)  l.y = H + 20;
+                    if (l.y > H+20) l.y = -20;
+                    ctx.fillStyle = `rgba(147, 197, 253, ${l.alpha})`;
+                    ctx.fillText(l.text, l.x, l.y);
+                });
+            }
+
+            // ── Main loop ──────────────────────────────────────
+            function draw() {
+                tick++;
+                ctx.clearRect(0, 0, W, H);
+
+                drawGrid();
+                drawBars();
+
+                const t = tick * 0.012;
+                // Back chart (faint, low position)
+                drawChart(28, H * 0.72, H * 0.07, 0.38, t * 0.8,  '96, 165, 250',  0.2, 0.04, 0.8);
+                // Mid chart
+                drawChart(24, H * 0.52, H * 0.09, 0.5,  t,        '147, 197, 253', 0.32, 0.05, 1.1);
+                // Front chart (brightest, upper)
+                drawChart(20, H * 0.32, H * 0.10, 0.42, t * 1.15, '186, 230, 253', 0.5,  0.07, 1.5);
+
+                drawLabels();
+
+                requestAnimationFrame(draw);
+            }
+
+            resize();
+            window.addEventListener('resize', resize, { passive: true });
+            draw();
+        })();
+    </script>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project-card').forEach((el, i) => {
+            el.style.transitionDelay = `${i * 0.08}s`;
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('.skill-category').forEach((el, i) => {
+            el.style.transitionDelay = `${i * 0.1}s`;
+            observer.observe(el);
+        });
+    </script>
+
+</body>
 </html>
